@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 30px repeat(5, 50px);
+  grid-gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+.box {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.day {
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+}
+.box:hover {
+  transform: scale(1.05);
+}
